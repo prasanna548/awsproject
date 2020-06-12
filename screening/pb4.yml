@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Printing the environment<200b> variable in Ansible
+      debug:
+        msg: "{{ lookup('env','HOME') }}"
+
